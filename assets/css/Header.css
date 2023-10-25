@@ -12,21 +12,45 @@ html {
     font-family: url('/assets/font/Roboto-Black.ttf');
 }
 
-#header {
-    height: 6.6rem;
+:root {
+    --size_text: 1.5rem;
 }
 
-.nav-bar {
-    font-size: 2rem;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 0;
+#header {
     height: 7.2rem;
     border-bottom: 1px solid rgb(240, 240, 240);
 }
 
+.nav-bar {
+    font-size: var(--size_text);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+    height: 7.2rem;
+}
+
+.nav-left a .fa-bars {
+    display: none;
+    font-size: 2rem;
+    margin: 1rem 0 0 0.5rem;
+}
+
 .nav-left {
-    width: 52.6rem;
+    display: flex;
+    margin-left: 4rem;
+}
+
+.home {
+    width: 15.2rem;
+    height: 5.6rem;
+    line-height: 5.6rem;
+    text-align: center;
+    margin: -0.2rem 0;
+}
+
+.left {
+    width: 37rem;
     height: 5.6rem;
 
     display: flex;
@@ -47,29 +71,29 @@ a {
     display: block;
 }
 
-.nav-left > li:hover > i,
-.nav-left > li:hover > a {
+.left > li:hover > i,
+.left > li:hover > a {
     color: #1a6fb7;
 }
 
-.nav-left li i {
-    font-size: 1.5rem;
+.nav-bar li i {
+    font-size: var(--size_text);
 }
 
 .nav-right {
     height: 5.6rem;
-    width: 53.7rem;
+    width: 43.3rem;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: -0.2rem 0;
+    margin: -0.2rem 4rem -0.2rem 0;
 }
 
 .btn {
     background-color: #f2863b;
     line-height: 4.8rem;
-    width: 15.9rem;
+    width: 15.3rem;
     text-align: center;
     border-radius: 4px;
 }
@@ -116,7 +140,7 @@ a {
     border-color: transparent transparent white transparent;
 }
 
-.nav-left .sub-nav {
+.left .sub-nav {
     display: flex;
     justify-content: space-around;
 
@@ -148,7 +172,7 @@ a {
 
 .sub li a {
     color: #000;
-    font-size: 1.6rem;
+    font-size: var(--size_text);
     display: block;
     padding: 0 1rem;
 }
@@ -175,14 +199,97 @@ a {
     padding: 0 1rem;
 }
 
-.nav-left li:hover .menu-dropdown {
+.left li:hover .menu-dropdown {
     display: block;
 }
 
 .extra {
     color: #1a6fb7;
-    font-size: 1.5rem; 
+    font-size: var(--size_text); 
     margin-left: 3.2rem;
     transform: translateY(45rem);
     line-height: 4rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 1199px) {
+    .nav-left {
+        margin-left: 2rem;
+    }
+
+    .nav-right {
+        margin-left: -2rem;
+    }
+}
+
+@media screen and (max-width: 995px) {
+    .nav-bar,
+    #header {
+        height: 12rem;
+    }
+
+    .home {
+        width: 11.2rem;
+        height: 2.9rem;
+        line-height: 2.9rem;
+        margin-top: 1.2rem;
+        margin-right: 4rem;
+    }
+
+    .btn {
+        margin-left: 4rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nav-bar,
+    #header {
+        height: 5.6rem;
+    }
+
+    .nav-left a .fa-bars {
+        display: block;
+    }
+
+    .home {
+        width: 11.2rem;
+        height: 2.9rem;
+        line-height: 2.9rem;
+        margin-left: 2rem;
+        margin-top: 0.5rem;
+    }
+
+    .fa-chevron-down {
+        margin: 0.4rem;
+    }
+
+    .left,
+    .btn,
+    .nav-right li a .fa-phone,
+    .nav-right li b {
+        display: none;
+    }
+
+    .nav-left {
+        width: 15.6rem;
+        height: 2.9rem;
+        line-height: 2.9rem;
+    }
+
+    .nav-right {
+        width: 4.3rem;
+        height: 2.4rem;
+        margin-top: 0.8rem;
+    }
+} 
+
+@media screen and (max-width: 239px){
+    .nav-bar,
+    #header {
+        height: 8.5rem;
+    }
+
+    .nav-right {
+        margin-left: 2.5rem;
+    }
 }
