@@ -8,102 +8,207 @@
     <link rel="stylesheet" href="/assets/css/Header.css">
     <script src="https://kit.fontawesome.com/b2d991c230.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <script src="/assets/js/header.js"></script>
+
+
 </head>
 
 <body>
-    <header id="header">
-        <nav class="nav-bar">
-            <div class="nav-left">
-                <a href=""><i class="fa-solid fa-bars"></i></a>
-                
-                <a href="" class="home">
+    <div id="hiden">
+        <ul class="hiden-header">
+            <li>
+                <a href="" class="hiden-home">
                     <i class="fa-solid fa-house"></i>
                     <b>Home</b>
                 </a>
+            </li>
+            <li><button type="button" onclick="cancle()" class="cancle">X</button></li>
+        </ul>
 
-                <ul class="left">
-                    <!-- <li><a href=""><b>Home</b></a></li> -->
+        <ul class="hiden-nav">
+            <li>
+                <button type="button" onclick="mua()" class="mua">
+                    <b>Mua xe</b>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                
+                <div id="hiden-sub-nav">
+                    <ul>
+                        <li>
+                            <button type="button" onclick="mua1()" class="hiden-sub">
+                                <b>HÃNG XE PHỔ BIẾN</b>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+        
+                            <ul id="hiden-sub1">
+                                <li><a href="">Toyota</a></li>
+                                <li><a href="">Honda</a></li>
+                                <li><a href="">Mercedes</a></li>
+                                <li><a href="">Ford</a></li>
+                                <li><a href="">BMW</a></li>
+                                <li><a href="">Chevrolet</a></li>
+                                <li><a href="">Huyndai</a></li>
+                                <li><a href="">Kia</a></li>
+                                <li><a href="">Mazda</a></li>
+                                <li><a href="">VinFast</a></li>
+                            </ul>
+                        </li>
+        
+                        <li>
+                            <button type="button" onclick="mua2()" class="hiden-sub">
+                                <b>DÒNG XE PHỔ BIẾN</b>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+        
+                            <ul id="hiden-sub2">
+                                <li><a href="">Mercedes-Benz GL Class</a></li>
+                                <li><a href="">Mercedes-Benz E Class</a></li>
+                                <li><a href="">Mitsubishi Xpander Cross</a></li>
+                                <li><a href="">Toyota Fortuner</a></li>
+                                <li><a href="">Mercedes-Benz S Class</a></li>
+                                <li><a href="">Mercedes-Benz C Class</a></li>
+                                <li><a href="">Huyndai Santafe</a></li>
+                                <li><a href="">Toyota Corolla Cross</a></li>
+                                <li><a href="">Ford Everest</a></li>
+                                <li><a href="">Toyota Vios</a></li>
+                            </ul>
+                        </li>
+        
+        
+                        <li>
+                            <button type="button" onclick="mua3()" class="hiden-sub">
+                                <b>GIÁ XE</b>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+        
+                            <ul id="hiden-sub3">
+                                <li><a href="">Dưới 500 triệu</a></li>
+                                <li><a href="">Từ 500 - 700 triệu</a></li>
+                                <li><a href="">Từ 700 - 1 tỷ</a></li>
+                                <li><a href="">Trên 1 tỷ</a></li>
+                            </ul>
+                        </li>
+        
+                        <li><a href="" class="hiden-extra">Xem tất cả xe</a></li>
+                    </ul>
+                </div>
+            </li>
+    
+            <li><a href=""><b>Bán xe</b></a></li>
+            <li><a href=""><b>Giới thiệu</b></a></li>
+            <li><a href=""><b>Tin tức</b></a></li>
+            <li>
+                <a href="">
+                    <i class="fa-solid fa-phone"></i>
+                    <b>078.274.8863</b>
+                </a>
+            </li>
+        </ul>
+
+        <div class="font-dang">
+            <a href="" class="dang"><b style="color: #fff;">ĐĂNG TIN</b></a>
+        </div>
+    </div>
+
+    <main id="main">
+        <header id="header">
+            <nav class="nav-bar">
+                <div class="nav-left">
+                    <button type="button" onclick="showFormButton()" class="bars"><i class="fa-solid fa-bars"></i></button>
+    
+                    <a href="" class="home">
+                        <i class="fa-solid fa-house"></i>
+                        <b>Home</b>
+                    </a>
+    
+                    <ul class="left">
+                        <!-- <li><a href=""><b>Home</b></a></li> -->
+                        <li>
+                            <a href="">
+                                <b>Mua xe</b>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+    
+                            <div class="menu-dropdown">
+                                <div class="Hv"></div>
+                                <ul class="sub-nav">
+                                    <li>
+                                        <ul class="sub sub1">
+                                            <li style="font-size: 1.6rem;"><b>HÃNG XE PHỔ BIẾN</b></li>
+                                            <li><a href="">Toyota</a></li>
+                                            <li><a href="">Honda</a></li>
+                                            <li><a href="">Mercedes</a></li>
+                                            <li><a href="">Ford</a></li>
+                                            <li><a href="">BMW</a></li>
+                                            <li><a href="">Chevrolet</a></li>
+                                            <li><a href="">Huyndai</a></li>
+                                            <li><a href="">Kia</a></li>
+                                            <li><a href="">Mazda</a></li>
+                                            <li><a href="">VinFast</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="sub sub2">
+                                            <li style="font-size: 1.6rem;"><b>DÒNG XE PHỔ BIẾN</b></li>
+                                            <li><a href="">Mercedes-Benz GL Class</a></li>
+                                            <li><a href="">Mercedes-Benz E Class</a></li>
+                                            <li><a href="">Mitsubishi Xpander Cross</a></li>
+                                            <li><a href="">Toyota Fortuner</a></li>
+                                            <li><a href="">Mercedes-Benz S Class</a></li>
+                                            <li><a href="">Mercedes-Benz C Class</a></li>
+                                            <li><a href="">Huyndai Santafe</a></li>
+                                            <li><a href="">Toyota Corolla Cross</a></li>
+                                            <li><a href="">Ford Everest</a></li>
+                                            <li><a href="">Toyota Vios</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="sub sub3">
+                                            <li style="font-size: 1.6rem;"><b>GIÁ XE</b></li>
+                                            <li><a href="">Dưới 500 triệu</a></li>
+                                            <li><a href="">Từ 500 - 700 triệu</a></li>
+                                            <li><a href="">Từ 700 - 1 tỷ</a></li>
+                                            <li><a href="">Trên 1 tỷ</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+    
+                                <a href="" class="extra">Xem tất cả xe</a>
+                            </div>
+                        </li>
+                        <li><a href=""><b>Bán xe</b></a></li>
+                        <li><a href=""><b>Giới thiệu</b></a></li>
+                        <li><a href=""><b>Tin tức</b></a></li>
+                    </ul>
+                </div>
+    
+                <ul class="nav-right">
+                    <li class="btn">
+                        <a href="">
+                            <i class="fa-solid fa-car"></i>
+                            <b>ĐĂNG TIN</b>
+                        </a>
+                    </li>
                     <li>
                         <a href="">
-                            <b>Mua xe</b>
+                            <i class="fa-solid fa-phone"></i>
+                            <b>078.274.8863</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="acc">
+                            <i class="fa-regular fa-circle-user"></i>
+                            <b>Tài khoản</b>
                             <i class="fa-solid fa-chevron-down"></i>
                         </a>
-                        <div class="menu-dropdown">
-                            <div class="Hv"></div>
-                            <ul class="sub-nav">
-                                <li>
-                                    <ul class="sub sub1">
-                                        <li style="font-size: 1.6rem;"><b>HÃNG XE PHỔ BIẾN</b></li>
-                                        <li><a href="">Toyota</a></li>
-                                        <li><a href="">Honda</a></li>
-                                        <li><a href="">Mercedes</a></li>
-                                        <li><a href="">Ford</a></li>
-                                        <li><a href="">BMW</a></li>
-                                        <li><a href="">Chevrolet</a></li>
-                                        <li><a href="">Huyndai</a></li>
-                                        <li><a href="">Kia</a></li>
-                                        <li><a href="">Mazda</a></li>
-                                        <li><a href="">VinFast</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul class="sub sub2">
-                                        <li style="font-size: 1.6rem;"><b>DÒNG XE PHỔ BIẾN</b></li>
-                                        <li><a href="">Mercedes-Benz GL Class</a></li>
-                                        <li><a href="">Mercedes-Benz E Class</a></li>
-                                        <li><a href="">Mitsubishi Xpander Cross</a></li>
-                                        <li><a href="">Toyota Fortuner</a></li>
-                                        <li><a href="">Mercedes-Benz S Class</a></li>
-                                        <li><a href="">Mercedes-Benz C Class</a></li>
-                                        <li><a href="">Huyndai Santafe</a></li>
-                                        <li><a href="">Toyota Corolla Cross</a></li>
-                                        <li><a href="">Ford Everest</a></li>
-                                        <li><a href="">Toyota Vios</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul class="sub sub3">
-                                        <li style="font-size: 1.6rem;"><b>GIÁ XE</b></li>
-                                        <li><a href="">Dưới 500 triệu</a></li>
-                                        <li><a href="">Từ 500 - 700 triệu</a></li>
-                                        <li><a href="">Từ 700 - 1 tỷ</a></li>
-                                        <li><a href="">Trên 1 tỷ</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-
-                            <a href="" class="extra">Xem tất cả xe</a>
-                        </div>
                     </li>
-                    <li><a href=""><b>Bán xe</b></a></li>
-                    <li><a href=""><b>Giới thiệu</b></a></li>
-                    <li><a href=""><b>Tin tức</b></a></li>
                 </ul>
-            </div>
+            </nav>
+        </header>
 
-            <ul class="nav-right">
-                <li class="btn">
-                    <a href="">
-                        <i class="fa-solid fa-car"></i>
-                        <b>ĐĂNG TIN</b>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="fa-solid fa-phone"></i>
-                        <b>078.274.8863</b>
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="acc">
-                        <i class="fa-regular fa-circle-user"></i>
-                        <b>Tài khoản</b>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+        <div class="content"></div>
+    </main>
+
 </body>
 
 </html>
