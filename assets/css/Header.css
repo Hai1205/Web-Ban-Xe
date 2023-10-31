@@ -29,6 +29,7 @@ a {
     display: block;
 }
 
+.nav-right li,
 button {
     cursor: pointer;
 }
@@ -89,6 +90,36 @@ button {
     margin: -0.2rem 4rem -0.2rem 0;
 }
 
+.acc {
+    position: relative;
+    color: var(--color_text);
+}
+
+.log-dropdown {
+    display: none;
+    position: absolute;
+    width: 11rem;
+    height: 11rem;
+    animation: appearance ease-in 0.2s;
+}
+
+.log {
+    position: absolute;
+    width: 11rem;
+    height: 9.6rem;
+    background-color: var(--main_color);
+    transform: translatey(1.5rem);
+    box-shadow: 0 0 1rem;
+    border-radius: 4px;
+}
+
+.log li {
+    width: 11rem;
+    height: 4.8rem;
+    line-height: 4.8rem;
+    padding-left: 1rem;
+}
+
 .btn {
     background-color: #f2863b;
     line-height: 4.8rem;
@@ -107,22 +138,21 @@ button {
 
 .menu-dropdown {
     display: none;
-
     position: absolute;
-
     height: 49.7rem;
     width: 66rem;
-
     animation: appearance ease-in 0.2s;
 }
 
+.log::before,
 .sub-nav::before {
     content: "";
     position: absolute;
-    left: 1rem;
     top: -3.3rem;
     border-width: 2rem 2rem;
     border-style: solid;
+    left: 1rem;
+    z-index: -5;
     border-color: transparent transparent var(--main_color);
 }
 
@@ -185,8 +215,15 @@ button {
     padding: 0 1rem;
 }
 
+.nav-right li:hover .log-dropdown,
 .left li:hover .menu-dropdown {
     display: block;
+}
+
+.phone {
+    color: var(--color_text);
+    background-color: #fff;
+    border: none;
 }
 
 .extra {
@@ -271,6 +308,7 @@ button {
     font-size: var(--size_text15);
 }
 
+.hiden-nav .phone,
 .hiden-nav > li > a {
     width: 30rem;
     height: 4rem;
@@ -357,6 +395,7 @@ button {
     line-height: 3.8rem;
 }
 
+.log li:hover,
 #hiden-sub1 li:hover,
 #hiden-sub2 li:hover,
 #hiden-sub3 li:hover {
@@ -397,7 +436,7 @@ button {
     }
 }
 
-@media screen and (max-width: 995px) {
+@media screen and (max-width: 1010px) {
     .nav-bar,
     #header {
         height: 12rem;
@@ -437,10 +476,14 @@ button {
     .fa-chevron-down {
         margin: 0.4rem;
     }
+    
+    .log {
+        transform: translate(-3rem, 1rem);
+    }
 
     .left,
     .btn,
-    .nav-right li a .fa-phone,
+    .nav-right li button .fa-phone,
     .nav-right li b {
         display: none;
     }
