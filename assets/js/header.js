@@ -1,59 +1,59 @@
 function showFormButton() {
-    document.getElementById('hiden').style.display = 'block';
+    document.getElementById('hidden').style.display = 'block';
     document.getElementById('main').style.backgroundColor = '#ccc';
 }
 
-function cancle() {
-    document.getElementById('hiden').style.display = 'none';
+function cancel() {
+    document.getElementById('hidden').style.display = 'none';
     document.getElementById('main').style.backgroundColor = '#fff';
 }
 
-function mua() {
-    const hidenSubNav = document.getElementById('hiden-sub-nav');
-    if (hidenSubNav.style.display === 'block') {
-        hidenSubNav.style.display = 'none';
+function buy() {
+    const hiddenSubNav = document.getElementById('hidden-sub-nav');
+    if (hiddenSubNav.style.display === 'block') {
+        hiddenSubNav.style.display = 'none';
 
-        document.getElementById('hiden-sub1').style.display = 'none';
-        document.getElementById('hiden-sub2').style.display = 'none';
-        document.getElementById('hiden-sub3').style.display = 'none';
+        document.getElementById('hidden-sub1').style.display = 'none';
+        document.getElementById('hidden-sub2').style.display = 'none';
+        document.getElementById('hidden-sub3').style.display = 'none';
     } else {
-        hidenSubNav.style.display = 'block';
+        hiddenSubNav.style.display = 'block';
     }
 }
 
-function mua1() {
-    const hidenSub1 = document.getElementById('hiden-sub1');
-    if (hidenSub1.style.display === 'block') {
-        hidenSub1.style.display = 'none';
+function buy1() {
+    const hiddenSub1 = document.getElementById('hidden-sub1');
+    if (hiddenSub1.style.display === 'block') {
+        hiddenSub1.style.display = 'none';
     } else {
-        hidenSub1.style.display = 'block';
+        hiddenSub1.style.display = 'block';
     }
 
-    document.getElementById('hiden-sub2').style.display = 'none';
-    document.getElementById('hiden-sub3').style.display = 'none';
+    document.getElementById('hidden-sub2').style.display = 'none';
+    document.getElementById('hidden-sub3').style.display = 'none';
 }
 
-function mua2() {
-    document.getElementById('hiden-sub1').style.display = 'none';
+function buy2() {
+    document.getElementById('hidden-sub1').style.display = 'none';
 
-    const hidenSub2 = document.getElementById('hiden-sub2');
-    if (hidenSub2.style.display === 'block') {
-        hidenSub2.style.display = 'none';
+    const hiddenSub2 = document.getElementById('hidden-sub2');
+    if (hiddenSub2.style.display === 'block') {
+        hiddenSub2.style.display = 'none';
     } else {
-        hidenSub2.style.display = 'block';
+        hiddenSub2.style.display = 'block';
     }
 
-    document.getElementById('hiden-sub3').style.display = 'none';
+    document.getElementById('hidden-sub3').style.display = 'none';
 }
 
-function mua3() {
-    document.getElementById('hiden-sub1').style.display = 'none';
-    document.getElementById('hiden-sub2').style.display = 'none';
+function buy3() {
+    document.getElementById('hidden-sub1').style.display = 'none';
+    document.getElementById('hidden-sub2').style.display = 'none';
 
-    const hidenSub3 = document.getElementById('hiden-sub3');
-    if (hidenSub3.style.display === 'block') {
-        hidenSub3.style.display = 'none';
+    const hiddenSub3 = document.getElementById('hidden-sub3');
+    if (hiddenSub3.style.display === 'block') {
+        hiddenSub3.style.display = 'none';
     } else {
-        hidenSub3.style.display = 'block';
+        hiddenSub3.style.display = 'block';
     }
 }
